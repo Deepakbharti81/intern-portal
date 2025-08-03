@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-   axios.get("https://your-backend.onrender.com/api/user")
+     axios.get("https://intern-portal-m2q0.onrender.com/api/user")
       .then((response) => setUserData(response.data))
       .catch((error) => console.error("Error fetching user data:", error));
   }, []);
